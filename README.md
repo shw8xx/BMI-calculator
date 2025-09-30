@@ -2,7 +2,7 @@
 This repository contains bmiCalculator that were developed by me during the Full-Stack bootCamp by INTEGRAMINDS.
 
 # Project
-<a href="(https://shw8x.netlify.app/)">bmiCalculator</a>
+<a href="https://shw8x.netlify.app/">bmiCalculator</a>
 <br>
 ![alt text](p4.gif)
 
