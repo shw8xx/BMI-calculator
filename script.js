@@ -1,10 +1,9 @@
 var container = document.getElementById("container");
 var gender = document.getElementById("gender");
-var age = document.getElementById("age").value;
+var age = document.getElementById("age");
 var height = document.getElementById("height");
 var weight = document.getElementById("weight");
 var result = document.getElementById("result");
-var display = document.getElementById("display");
 var comment = document.getElementById("comment");
 const submit = document.getElementById("submit");
 var input = document.getElementsByTagName("input");
@@ -16,8 +15,7 @@ function getBMI() {
 }
 
 function changeVisuals() {
-    display.innerHTML = "YOUR RESULT";
-    result.innerHTML = bmi;
+    result.innerHTML = "YOUR RESULT: " + bmi;
     result.style.fontSize = "3rem";
     if (bmi <= 18.5) {
         container.style.backgroundColor = "#7ea1dc";
@@ -48,7 +46,7 @@ function changeMessage() {
 submit.addEventListener('click', () => {
     getBMI();
     changeVisuals();
-    if (age < 16 && age > 60) {
+    if (age.value < 16 || age.value > 60) {
         comment.innerHTML = "AT THIS AGE, YOU SHOULDN'T BMI FAILS TO JUDGE. YOU'RE IN GOOD SHAPE.";
     }
 })
